@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css"  />
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="bg-light">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-11 main-cart mx-auto">
+            <div class="row mt-5 gx-3">
+                <!-- left-side-area -->
+                <div class="col-md-12 col-lg-8 col-12 mx-auto shadow main-cart mb-lg-0 mb-5">
+                    <div class="card p-4">
+                        <h2 class="py-4 font-weight-bold">Cart (2 item)</h2>
+                        <div class="row">
+                            <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center shadow product_img">
+                                 <img src="img/images-1.jpg" class="img-fluid" alt="img">
+                            </div>
+                            <!-- card-details -->
+                            <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                <div class="row">
+                                    <div class="col-6 card_title">
+                                        <h1 class="mb-4 product-name">Blue Zara Shart</h1> 
+                                        <p>SHART - BLUE</p>
+                                        <p>COLOR: BLUE</p>
+                                        <p>SIZE: MAX</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="pagination justify-content-end set_quantity">
+                                             <li class="page-item">
+                                                 <button class="page-link" onclick="desnum('text-box', 'itemval')"><i class="fas fa-minus"></i></button>
+                                            </li>
+                                            <li class="page-item">
+                                                <input type="text" name="" class="page-link" value="0" id="text-box">
+                                                </li> 
+                                            <li class="page-item"> 
+                                                <button class="page-link" onclick="inknum('text-box', 'itemval')"><i class="fas fa-plus"></i></button>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Remove-item -->
+                                <div class="row">  
+                                    <div class="col-lg-8 d-flex justify-content-between remove-wish">
+                                        <p><i class="fas fa-trash-alt"></i>Remove Item</p>
+                                        <p><i class="fas fa-heart"></i>Move To Wish List</p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end price_money">
+                                        <h3>$ <span id="itemval">0.00 </span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="card p-4">
+                        <div class="row">
+                            <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center shadow product_img">
+                                 <img src="img/images-2.jpg" class="img-fluid" alt="img">
+                            </div>
+                            <!-- card-details -->
+                            <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                <div class="row">
+                                    <div class="col-6 card_title">
+                                        <h1 class="mb-4 product-name">Green Zara Shart</h1> 
+                                        <p>SHART - Green</p>
+                                        <p>COLOR: Green</p>
+                                        <p>SIZE: MAX</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="pagination justify-content-end set_quantity">
+                                             <li class="page-item">
+                                                 <button class="page-link" onclick="desnum('text-box1', 'itemval1')"><i class="fas fa-minus"></i></button>
+                                            </li>
+                                            <li class="page-item">
+                                                <input  type="text" name="" class="page-link" value="0" id="text-box1">
+                                                </li> 
+                                            <li class="page-item"> 
+                                                <button class="page-link" onclick="inknum('text-box1', 'itemval1')"><i class="fas fa-plus"></i></button>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Remove-item -->
+                                <div class="row">  
+                                    <div class="col-lg-8 d-flex justify-content-between remove-wish">
+                                        <p><i class="fas fa-trash-alt"></i>Remove Item</p>
+                                        <p><i class="fas fa-heart"></i>Move To Wish List</p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end price_money">
+                                        <h3>$ <span id="itemval1">0.00 </span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- left-side-area -->
+
+                <!-- Right-side-area -->
+                <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-mb-5" >
+                    <div class="right-side p-3 shadow bg-white">
+                        <h2 class="product-name mb-5"> The Total Amounr Of</h2>
+                        <div class="price_indiv d-flex justify-content-between">
+                            <p>Product amount</p>
+                            <p>$<span id="product_total_amt">0.00</span></p>
+                        </div>
+                        <div class="price_indiv d-flex justify-content-between">
+                            <p>Shoping Charge</p>
+                            <p>$ <span id="shoping_charge">50.0</span> </p>
+                        </div>
+                        <hr />
+                        <div class="total-amt d-flex justify-content-between font-weight-bold">
+                            <p>The total amount of (including VAT)</p>
+                            <p>$ <span id="total_cart_amt">0.00</span></p>
+                        </div>
+                        <button class="btn btn-primary text-uppercase">Checkout</button>
+                    </div>
+                    <div class="discount_code mt-3 shadow" >
+                        <div class="card">
+                            <div class="card-body">
+                                <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Add a discount code (optional)
+                                    <span><i class="fas-chevron-down pt-1"></i></span>
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="mt-3">
+                                        <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code ">
+                                        <small id="error_trw" class="text-dark mt-3">Code is thapa </small>
+                                    </div>
+                                    <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="mt-3 shadow p-3 bg-white" >
+                        <div class="pt-4">
+                            <h5 class="mb-4">Expected delivery date</h5>
+                            <p>July 27th 2020 - july 29th 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right-side-area -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        let product_total_amt = document.getElementById('product_total_amt');
+        let total_cart_amt = document.getElementById("total_cart_amt");
+        let shoping_charge = document.getElementById("shoping_charge");
+        let discountCode = document.getElementById("discount_code1");
+
+        const  desnum = (incdec, itemprice) => {
+            var itemval =document.getElementById(incdec)
+            var itemprice =document.getElementById(itemprice)
+            // console.log(itemval.value)
+            if(itemval.value <= 0){
+                itemval.value= 0;
+                alert("Low Price")
+            }
+            else{
+                itemval.value = parseInt(itemval.value) -1;
+                itemval.style.background = "#fff"
+                itemval.style.color = "#000";
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 15;
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(
+                    shoping_charge.innerHTML);
+                
+            }
+        }
+
+        const  inknum = (incdec, itemprice ) => {
+            var itemval =document.getElementById(incdec)
+            var itemprice =document.getElementById(itemprice)
+            // console.log(itemval.value)
+            if(itemval.value >= 5 ){
+                itemval.value= 5;
+                alert("Max 5 Allowed");
+                itemval.style.background = "red"
+                itemval.style.color = "#fff"
+            }
+            else{
+                itemval.value = parseInt(itemval.value) +1;
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML)  + 15;
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(
+                    shoping_charge.innerHTML);
+            } 
+        }
+        const discount_code = () => {
+            let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+            if(discountCode.value === 'hadayet'){
+                let newtotal = totalamtcurr -15;
+                total_cart_amt.innerHTML = newtotal;
+                error_trw.innerHTML = "Code is Valide"
+                clear();
+            }
+            else{
+                error_trw.innerHTML = "Try Again"
+            }
+        }
+        function clear(){
+            discountCode.value = ''
+        }
+    </script>
+  </body>
+</html>
